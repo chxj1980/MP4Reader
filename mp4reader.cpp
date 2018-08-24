@@ -9,6 +9,13 @@
 #include <cstring>
 #include <cassert>
 
+#ifdef _MSC_VER
+#define __builtin_bswap64(x) _byteswap_uint64(x)
+#define __builtin_bswap32(x) _byteswap_ulong(x)
+#define __builtin_bswap16(x) _byteswap_ushort(x)
+#endif  // #ifdef _MSC_VER
+
+
 using std::cout; using std::endl;
 
 MP4Reader::MP4Reader(char *bytes, unsigned int length, unsigned int offset, MP4File *file, unsigned int readerDepth, MP4Box *parent)

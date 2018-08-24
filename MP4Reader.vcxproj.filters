@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="atoms">
+      <UniqueIdentifier>{0135c8eb-7f24-4331-85fb-0fb4a21892ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="atoms\atomavc1.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomavcc.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atombtrt.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomesds.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomftyp.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomhdlr.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommdat.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommdhd.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommdia.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomminf.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommoov.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommp4a.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atommvhd.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomsmhd.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstbl.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstco.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstsc.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstsd.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstss.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstsz.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomstts.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomtkhd.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="atoms\atomtrak.cpp">
+      <Filter>atoms</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="track.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atoms\atomavc1.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomavcc.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atombtrt.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomesds.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomftyp.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomhdlr.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommdat.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommdhd.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommdia.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomminf.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommoov.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommp4a.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atommvhd.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atoms.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomsmhd.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstbl.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstco.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstsc.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstsd.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstss.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstsz.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomstts.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomtkhd.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="atoms\atomtrak.h">
+      <Filter>atoms</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="track.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

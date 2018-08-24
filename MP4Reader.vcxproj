@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0E88C32-8D86-4B6E-A464-B20770CD5874}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MP4Reader</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="atoms\atomavc1.cpp" />
+    <ClCompile Include="atoms\atomavcc.cpp" />
+    <ClCompile Include="atoms\atombtrt.cpp" />
+    <ClCompile Include="atoms\atomesds.cpp" />
+    <ClCompile Include="atoms\atomftyp.cpp" />
+    <ClCompile Include="atoms\atomhdlr.cpp" />
+    <ClCompile Include="atoms\atommdat.cpp" />
+    <ClCompile Include="atoms\atommdhd.cpp" />
+    <ClCompile Include="atoms\atommdia.cpp" />
+    <ClCompile Include="atoms\atomminf.cpp" />
+    <ClCompile Include="atoms\atommoov.cpp" />
+    <ClCompile Include="atoms\atommp4a.cpp" />
+    <ClCompile Include="atoms\atommvhd.cpp" />
+    <ClCompile Include="atoms\atomsmhd.cpp" />
+    <ClCompile Include="atoms\atomstbl.cpp" />
+    <ClCompile Include="atoms\atomstco.cpp" />
+    <ClCompile Include="atoms\atomstsc.cpp" />
+    <ClCompile Include="atoms\atomstsd.cpp" />
+    <ClCompile Include="atoms\atomstss.cpp" />
+    <ClCompile Include="atoms\atomstsz.cpp" />
+    <ClCompile Include="atoms\atomstts.cpp" />
+    <ClCompile Include="atoms\atomtkhd.cpp" />
+    <ClCompile Include="atoms\atomtrak.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mp4box.cpp" />
+    <ClCompile Include="mp4file.cpp" />
+    <ClCompile Include="mp4reader.cpp" />
+    <ClCompile Include="track.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atoms\atomavc1.h" />
+    <ClInclude Include="atoms\atomavcc.h" />
+    <ClInclude Include="atoms\atombtrt.h" />
+    <ClInclude Include="atoms\atomesds.h" />
+    <ClInclude Include="atoms\atomftyp.h" />
+    <ClInclude Include="atoms\atomhdlr.h" />
+    <ClInclude Include="atoms\atommdat.h" />
+    <ClInclude Include="atoms\atommdhd.h" />
+    <ClInclude Include="atoms\atommdia.h" />
+    <ClInclude Include="atoms\atomminf.h" />
+    <ClInclude Include="atoms\atommoov.h" />
+    <ClInclude Include="atoms\atommp4a.h" />
+    <ClInclude Include="atoms\atommvhd.h" />
+    <ClInclude Include="atoms\atoms.h" />
+    <ClInclude Include="atoms\atomsmhd.h" />
+    <ClInclude Include="atoms\atomstbl.h" />
+    <ClInclude Include="atoms\atomstco.h" />
+    <ClInclude Include="atoms\atomstsc.h" />
+    <ClInclude Include="atoms\atomstsd.h" />
+    <ClInclude Include="atoms\atomstss.h" />
+    <ClInclude Include="atoms\atomstsz.h" />
+    <ClInclude Include="atoms\atomstts.h" />
+    <ClInclude Include="atoms\atomtkhd.h" />
+    <ClInclude Include="atoms\atomtrak.h" />
+    <ClInclude Include="mp4box.h" />
+    <ClInclude Include="mp4file.h" />
+    <ClInclude Include="mp4reader.h" />
+    <ClInclude Include="track.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

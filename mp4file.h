@@ -36,7 +36,7 @@ public:
     MP4Reader *reader() { return m_reader; }
     MP4Box* findNodeByPath(string path);
     void addTrack(Track *track);
-    bool setVerboseLevel(MP4VerboseLevel verboseLevel) { m_verboseLevel = verboseLevel; }
+	void setVerboseLevel(MP4VerboseLevel verboseLevel) { m_verboseLevel = verboseLevel;  }
     MP4VerboseLevel verboseLevel() { return m_verboseLevel; }
     void log(MP4VerboseLevel verboseLevel, string message);
     bool logToScreen() const;
